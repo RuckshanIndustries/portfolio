@@ -503,27 +503,27 @@ export default function Home() {
   )
 }
 
-function SkillBar({ name, level, color = "sky" }) {
-  const colors = {
-    sky: "from-sky-500 to-sky-600",
-    indigo: "from-indigo-500 to-indigo-600",
-  }
+// function SkillBar({ name, level, color = "sky" }) {
+//   const colors = {
+//     sky: "from-sky-500 to-sky-600",
+//     indigo: "from-indigo-500 to-indigo-600",
+//   }
 
-  return (
-    <div className="space-y-1">
-      <div className="flex justify-between text-sm">
-        <span>{name}</span>
-        <span>{level}%</span>
-      </div>
-      <div className="h-2 w-full bg-zinc-100 rounded-full overflow-hidden">
-        <motion.div
-          className={`h-full bg-gradient-to-r ${colors[color]}`}
-          initial={{ width: 0 }}
-          whileInView={{ width: `${level}%` }}
-          transition={{ duration: 1, ease: "easeOut" }}
-          viewport={{ once: true }}
-        />
-      </div>
-    </div>
-  )
-}
+//   return (
+//     <div className="space-y-1">
+//       <div className="flex justify-between text-sm">
+//         <span>{name}</span>
+//         <span>{level}%</span>
+//       </div>
+//       <div className="h-2 w-full bg-zinc-100 rounded-full overflow-hidden">
+//         <motion.div
+//           className={`h-full bg-gradient-to-r ${colors[color]}`}
+//           initial={{ width: 0 }}
+//           whileInView={{ width: `${level}%` }}
+//           transition={{ duration: 1, ease: "easeOut" }}
+//           viewport={{ once: true }}
+//         />
+//       </div>
+//     </div>
+//   )
+// }
