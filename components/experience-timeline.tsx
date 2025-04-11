@@ -42,6 +42,15 @@ export default function ExperienceTimeline() {
       color: "bg-indigo-500",
     },
     {
+      title: "Trainee Assistant",
+      company: "BOC",
+      period: "2020 (3 Months Contract)",
+      description:
+        "Worked as trainee in BOC Bank maintaning accounts and customer handling.",
+      icon: <Briefcase className="h-6 w-6 text-white" />,
+      color: "bg-sky-500",
+    },
+    {
       title: "Game Developer - Freelancer",
       company: "Ruckshan Industires",
       period: "2015 - Present",
