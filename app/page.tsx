@@ -228,17 +228,17 @@ export default function Home() {
               title="Bioware"
               category="Game Development"
               description="An open-world RPG developed with Unreal Engine, featuring advanced AI systems and dynamic environments."
-              technologies={["Unreal Engine", "C++", "Blueprint", "3D Modeling"]}
-              imageUrl="/placeholder.svg?height=400&width=600"
+              technologies={["Unreal Engine", "C++", "Blueprint", "Maximo"]}
+              imageUrl="/games/Bio5.png?height=400&width=600"
               modelType="fantasy"
               githubUrl="https://github.com/yourusername/adventure-quest"
-              liveUrl="https://example.com/adventure-quest-demo"
+              liveUrl="https://ruckshanindustries.itch.io/bioware"
             />
             <ProjectCard
               title="ForsakenValor"
               category="Game Development"
               description="A space simulation game built with Unity, incorporating realistic physics and procedural generation."
-              technologies={["Unity", "C#", "Shader Programming", "Procedural Generation"]}
+              technologies={["Unreal Engine", "C++", "Shader Programming", "Procedural Generation"]}
               imageUrl="/placeholder.svg?height=400&width=600"
               modelType="space"
               githubUrl="https://github.com/yourusername/space-explorer"
@@ -248,7 +248,17 @@ export default function Home() {
               title="Bingo"
               category="Game Development"
               description="An Endless Runner Game."
-              technologies={["Unity", "C#", "Shader Programming", "Procedural Generation"]}
+              technologies={["Unreal Engine", "C++", "Blueprints"]}
+              imageUrl="/games/Bingo4.png?height=400&width=600"
+              modelType="space"
+              githubUrl="https://github.com/yourusername/space-explorer"
+              liveUrl="https://example.com/space-explorer-demo"
+            />
+            <ProjectCard
+              title="Fire in the hell"
+              category="Game Development"
+              description="A Multiplayer Game like Bomber man."
+              technologies={["Unreal Engine", "C++", "Blueprints", "Steam Plugin Integration"]}
               imageUrl="/placeholder.svg?height=400&width=600"
               modelType="space"
               githubUrl="https://github.com/yourusername/space-explorer"
@@ -257,7 +267,8 @@ export default function Home() {
             <ProjectCard
               title="Tailoring Mobile App - Jean"
               category="Mobile Development"
-              description="A comprehensive ERP solution developed using the IFS framework, streamlining business operations."
+              description="Its A suits Designing platform that will export the image will multiple combination.
+              Made this for a customer in freelancing he higly stsified."
               technologies={["C#", "Firebase", "MAUI", "REST API"]}
               imageUrl="/placeholder.svg?height=400&width=600"
               modelType="data"
@@ -268,7 +279,7 @@ export default function Home() {
               category="Mobile Development"
               description="A comprehensive ERP solution developed using the IFS framework, streamlining business operations."
               technologies={["Flutter", "Firebase", "Supabase", "REST API"]}
-              imageUrl="/placeholder.svg?height=400&width=600"
+              imageUrl="/mobile/petcare.png?height=400&width=600"
               modelType="data"
               githubUrl="https://github.com/yourusername/enterprise-resource-manager"
             />

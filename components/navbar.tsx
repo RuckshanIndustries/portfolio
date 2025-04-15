@@ -38,14 +38,13 @@ export default function Navbar({ onScrollToSection, isHomePage = false }: Navbar
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 border-b transition-all duration-300 ${
-        scrolled ? "border-zinc-200 backdrop-blur-md bg-white/80" : "border-transparent bg-white/0"
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 border-b transition-all duration-300 ${scrolled ? "border-zinc-200 backdrop-blur-md bg-white/80" : "border-transparent bg-white/0"
+        }`}
     >
       <div className="container flex items-center justify-between h-16 px-4 md:px-6">
         <Link href="/" className="text-xl font-bold tracking-tighter relative group">
           <span className="relative z-10 bg-clip-text text-transparent bg-gradient-to-r from-sky-500 to-indigo-500">
-            PORTFOLIO
+            ARVINTH RUCKSHAN
           </span>
           <span className="absolute -inset-1 rounded-lg bg-gradient-to-r from-sky-500/10 to-indigo-500/10 blur group-hover:blur-md transition-all duration-300"></span>
         </Link>
@@ -92,9 +91,8 @@ export default function Navbar({ onScrollToSection, isHomePage = false }: Navbar
 
           <Link
             href="/workshops"
-            className={`text-sm hover:text-sky-500 transition-colors relative group ${
-              isActive("/workshops") ? "text-sky-500" : ""
-            }`}
+            className={`text-sm hover:text-sky-500 transition-colors relative group ${isActive("/workshops") ? "text-sky-500" : ""
+              }`}
           >
             Workshops
             {isActive("/workshops") && <span className="absolute bottom-0 left-0 w-full h-0.5 bg-sky-500"></span>}
@@ -103,9 +101,8 @@ export default function Navbar({ onScrollToSection, isHomePage = false }: Navbar
 
           <Link
             href="/blog"
-            className={`text-sm hover:text-sky-500 transition-colors relative group ${
-              isActive("/blog") ? "text-sky-500" : ""
-            }`}
+            className={`text-sm hover:text-sky-500 transition-colors relative group ${isActive("/blog") ? "text-sky-500" : ""
+              }`}
           >
             Blog
             {isActive("/blog") && <span className="absolute bottom-0 left-0 w-full h-0.5 bg-sky-500"></span>}
@@ -124,7 +121,7 @@ export default function Navbar({ onScrollToSection, isHomePage = false }: Navbar
 
         {/* Resume Button */}
         <a
-          href="/resume.pdf"
+          href="/resume/resume.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="hidden md:flex items-center gap-2 bg-gradient-to-r from-sky-500 to-indigo-500 hover:from-sky-600 hover:to-indigo-600 text-white border-none px-4 py-2 rounded-md font-medium text-sm transition-all duration-300"

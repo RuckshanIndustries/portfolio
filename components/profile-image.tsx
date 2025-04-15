@@ -46,8 +46,8 @@ export default function ProfileImage() {
       </motion.div>
 
       {/* Decorative elements */}
-      <div className="absolute -inset-0.5 rounded-full bg-gradient-to-r from-sky-500 to-indigo-500 opacity-50 blur-md animate-tilt" />
-      <div className="absolute -inset-1 rounded-full bg-gradient-to-r from-sky-500/20 to-indigo-500/20 blur-xl" />
+      {/* <div className="absolute -inset-0.5 rounded-full bg-gradient-to-r from-sky-500 to-indigo-500 opacity-5 blur-md animate-tilt" /> */}
+      {/* <div className="absolute -inset-1 rounded-full bg-gradient-to-r from-sky-500/20 to-indigo-500/20 blur-xl" /> */}
 
       {/* Orbit effect */}
       <motion.div

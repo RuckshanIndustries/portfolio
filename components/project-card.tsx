@@ -94,14 +94,14 @@ export default function ProjectCard({
                   </p>
 
                   <div className="flex gap-2 mt-4">
-                    {githubUrl && (
+                    {/* {githubUrl && (
                       <Button size="sm" variant="outline" asChild className="gap-2">
                         <a href={githubUrl} target="_blank" rel="noopener noreferrer">
                           <Github size={16} />
                           Code
                         </a>
                       </Button>
-                    )}
+                    )} */}
                     {liveUrl && (
                       <Button
                         size="sm"
@@ -110,7 +110,7 @@ export default function ProjectCard({
                       >
                         <a href={liveUrl} target="_blank" rel="noopener noreferrer">
                           <ExternalLink size={16} />
-                          Live Demo
+                          Link
                         </a>
                       </Button>
                     )}
