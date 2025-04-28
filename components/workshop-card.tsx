@@ -58,9 +58,10 @@ export default function WorkshopCard({
               <p className="text-zinc-600 mb-4">{description}</p>
               <div className="flex flex-wrap gap-2 mt-4">
                 <Badge className="bg-sky-100 text-sky-800 hover:bg-sky-200 border-none">IoT</Badge>
-                <Badge className="bg-indigo-100 text-indigo-800 hover:bg-indigo-200 border-none">Arduino</Badge>
+                <Badge className="bg-indigo-100 text-indigo-800 hover:bg-indigo-200 border-none">Micro-Controller</Badge>
                 <Badge className="bg-sky-100 text-sky-800 hover:bg-sky-200 border-none">STEM Education</Badge>
                 <Badge className="bg-indigo-100 text-indigo-800 hover:bg-indigo-200 border-none">Kids Workshop</Badge>
+                <Badge className="bg-sky-100 text-sky-800 hover:bg-sky-200 border-none">ESP-32</Badge>
               </div>
             </CardContent>
           </div>
