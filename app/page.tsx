@@ -17,6 +17,7 @@ import Navbar from "@/components/navbar"
 import SocialLinks from "@/components/social-links"
 import TechStackDisplay from "@/components/tech-stack-display"
 import ContactForm from "./contect"
+import SkillsScene from "@/components/skills-scene"
 
 // Dynamically import 3D components to avoid SSR issues
 const HeroScene = dynamic(() => import("@/components/3d/hero-scene"), {
@@ -68,7 +69,7 @@ export default function Home() {
       <Navbar onScrollToSection={scrollToSection} isHomePage={true} />
 
       {/* Hero Section with 3D and Profile Image */}
-      <section ref={aboutRef} className="relative min-h-screen flex items-center justify-center">
+      <section ref={aboutRef} className="relative min-h-screen flex items-center justify-center pt-16 md:pt-0">
         <div className="absolute inset-0 z-0">
           <Suspense fallback={<LoadingSpinner />}>
             <HeroScene />
@@ -232,8 +233,9 @@ export default function Home() {
               technologies={["Unreal Engine", "C++", "Blueprint", "Maximo"]}
               imageUrl="./Bio5.png"
               modelType="fantasy"
-              githubUrl="https://github.com/yourusername/adventure-quest"
               liveUrl="https://ruckshanindustries.itch.io/bioware"
+            // githubUrl="https://github.com/yourusername/adventure-quest"
+
             />
             <ProjectCard
               title="ForsakenValor"
@@ -242,8 +244,8 @@ export default function Home() {
               technologies={["Unreal Engine", "C++", "Shader Programming", "Procedural Generation"]}
               imageUrl="./placeholder.svg"
               modelType="space"
-              githubUrl="https://github.com/yourusername/space-explorer"
-              liveUrl="https://example.com/space-explorer-demo"
+            // githubUrl="https://github.com/yourusername/space-explorer"
+            // liveUrl="https://example.com/space-exploerer-demo"
             />
             <ProjectCard
               title="Bingo"
@@ -252,8 +254,8 @@ export default function Home() {
               technologies={["Unreal Engine", "C++", "Blueprints"]}
               imageUrl="./Bingo4.png"
               modelType="space"
-              githubUrl="https://github.com/yourusername/space-explorer"
-              liveUrl="https://example.com/space-explorer-demo"
+            //githubUrl="https://github.com/yourusername/space-explorer"
+            //liveUrl="https://example.com/space-explorer-demo"
             />
             <ProjectCard
               title="Fire in the hell"
@@ -262,8 +264,8 @@ export default function Home() {
               technologies={["Unreal Engine", "C++", "Blueprints", "Steam Plugin Integration"]}
               imageUrl="./placeholder.svg"
               modelType="space"
-              githubUrl="https://github.com/yourusername/space-explorer"
-              liveUrl="https://example.com/space-explorer-demo"
+            // githubUrl="https://github.com/yourusername/space-explorer"
+            //liveUrl="https://example.com/space-explorer-demo"
             />
             <ProjectCard
               title="Tailoring Mobile App - Jean"
@@ -273,7 +275,7 @@ export default function Home() {
               technologies={["C#", "Firebase", "MAUI", "REST API"]}
               imageUrl="./placeholder.svg"
               modelType="data"
-              githubUrl="https://github.com/yourusername/enterprise-resource-manager"
+              githubUrl="https://github.com/RuckshanIndustries/jean"
             />
             <ProjectCard
               title="Pet-Care Mobile App"
@@ -282,7 +284,7 @@ export default function Home() {
               technologies={["Flutter", "Firebase", "Supabase", "REST API"]}
               imageUrl="./petcare.png"
               modelType="data"
-              githubUrl="https://github.com/yourusername/enterprise-resource-manager"
+              githubUrl="https://github.com/RuckshanIndustries/petcarer"
             />
             <ProjectCard
               title="Ticket Booking"
@@ -291,8 +293,8 @@ export default function Home() {
               technologies={["Java", "Spring Boot", "MySQL"]}
               imageUrl="./placeholder.svg"
               modelType="tech"
-              githubUrl="https://github.com/yourusername/inventory-control-system"
-              liveUrl="https://example.com/inventory-system-demo"
+              githubUrl="https://github.com/RuckshanIndustries/ticketing-system-backend"
+            // liveUrl="https://example.com/inventory-system-demo"
             />
           </div>
         </div>
@@ -303,6 +305,7 @@ export default function Home() {
           </Suspense>
         </div>
       </section>
+
 
       {/* Workshops Section */}
       <section ref={workshopsRef} className="py-24 relative bg-gradient-to-b from-white to-zinc-50">
@@ -374,12 +377,9 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            <GlassmorphicPanel className="p-6">
-              <h3 className="text-xl font-bold mb-4 text-zinc-800">Send a Message</h3>
-              <ContactForm>
 
-              </ContactForm>
-            </GlassmorphicPanel>
+            <ContactForm />
+
 
             <GlassmorphicPanel className="p-6">
               <h3 className="text-xl font-bold mb-4 text-zinc-800">Connect With Me</h3>
@@ -479,28 +479,3 @@ export default function Home() {
     </div>
   )
 }
-
-// function SkillBar({ name, level, color = "sky" }) {
-//   const colors = {
-//     sky: "from-sky-500 to-sky-600",
-//     indigo: "from-indigo-500 to-indigo-600",
-//   }
-
-//   return (
-//     <div className="space-y-1">
-//       <div className="flex justify-between text-sm">
-//         <span>{name}</span>
-//         <span>{level}%</span>
-//       </div>
-//       <div className="h-2 w-full bg-zinc-100 rounded-full overflow-hidden">
-//         <motion.div
-//           className={`h-full bg-gradient-to-r ${colors[color]}`}
-//           initial={{ width: 0 }}
-//           whileInView={{ width: `${level}%` }}
-//           transition={{ duration: 1, ease: "easeOut" }}
-//           viewport={{ once: true }}
-//         />
-//       </div>
-//     </div>
-//   )
-// }
