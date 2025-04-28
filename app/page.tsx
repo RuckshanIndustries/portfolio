@@ -229,7 +229,7 @@ export default function Home() {
             <ProjectCard
               title="Bioware"
               category="Game Development"
-              description="An open-world RPG developed with Unreal Engine, featuring advanced AI systems and dynamic environments."
+              description="Bioaware is an open and closed world RPG where a hero battles a villain-spread virus and fights to destroy the enemy’s stronghold to save humanity."
               technologies={["Unreal Engine", "C++", "Blueprint", "Maximo"]}
               imageUrl="./Bio5.png"
               modelType="fantasy"
@@ -240,9 +240,9 @@ export default function Home() {
             <ProjectCard
               title="ForsakenValor"
               category="Game Development"
-              description="A space simulation game built with Unity, incorporating realistic physics and procedural generation."
+              description="Forsaken Valor is an RPG where an outcast boy, self-taught in archery and swordsmanship, rises to save his town from a deadly ghost disaster."
               technologies={["Unreal Engine", "C++", "Shader Programming", "Procedural Generation"]}
-              imageUrl="./placeholder.svg"
+              imageUrl="./fv.png"
               modelType="space"
             // githubUrl="https://github.com/yourusername/space-explorer"
             // liveUrl="https://example.com/space-exploerer-demo"
@@ -260,9 +260,9 @@ export default function Home() {
             <ProjectCard
               title="Fire in the hell"
               category="Game Development"
-              description="A Multiplayer Game like Bomber man."
+              description="A Multiplayer Game like Bomber man in 3D."
               technologies={["Unreal Engine", "C++", "Blueprints", "Steam Plugin Integration"]}
-              imageUrl="./placeholder.svg"
+              imageUrl="./fih.png"
               modelType="space"
             // githubUrl="https://github.com/yourusername/space-explorer"
             //liveUrl="https://example.com/space-explorer-demo"
@@ -273,14 +273,14 @@ export default function Home() {
               description="Its A suits Designing platform that will export the image will multiple combination.
               Made this for a customer in freelancing he higly stsified."
               technologies={["C#", "Firebase", "MAUI", "REST API"]}
-              imageUrl="./placeholder.svg"
+              imageUrl="./jean.png"
               modelType="data"
               githubUrl="https://github.com/RuckshanIndustries/jean"
             />
             <ProjectCard
               title="Pet-Care Mobile App"
               category="Mobile Development"
-              description="A comprehensive ERP solution developed using the IFS framework, streamlining business operations."
+              description="Pet-Care is a mobile app that helps you manage your pet’s health, schedule vet visits, track feeding, and get daily care tips — all in one place."
               technologies={["Flutter", "Firebase", "Supabase", "REST API"]}
               imageUrl="./petcare.png"
               modelType="data"
@@ -289,9 +289,9 @@ export default function Home() {
             <ProjectCard
               title="Ticket Booking"
               category="Software Engineering"
-              description="A robust inventory management system with real-time tracking and analytics capabilities."
+              description="Ticket Booking is a fast and easy mobile app to book tickets for movies — anytime, anywhere."
               technologies={["Java", "Spring Boot", "MySQL"]}
-              imageUrl="./placeholder.svg"
+              imageUrl="./tsf.png"
               modelType="tech"
               githubUrl="https://github.com/RuckshanIndustries/ticketing-system-backend"
             // liveUrl="https://example.com/inventory-system-demo"

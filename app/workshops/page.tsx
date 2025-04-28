@@ -17,19 +17,19 @@ export default function WorkshopsPage() {
   const workshops = [
     {
       id: "iot-kids",
-      title: "IoT for Kids: Building Smart Devices",
-      date: "June 15-17, 2023",
-      location: "City Science Center",
-      participants: "25 children ages 10-14",
+      title: "Weather Kids: Building Smart Society",
+      date: "June 03, 2023",
+      location: "Nuwara Eliya",
+      participants: "25+ children ages 10-18",
       description:
-        "A three-day workshop where children learned the basics of Internet of Things (IoT) technology through hands-on projects. Participants built simple smart devices using Arduino boards, sensors, and basic programming concepts. The workshop culminated in a showcase where kids demonstrated their creations to parents and peers, including smart plant monitors, mini weather stations, and interactive LED displays.",
+        "The ‘Weather Kids’ program, in collaboration with Gavesha and UNICEF, talented young minds through hands-on workshops focused on weather science, IoT engineering, and career exploration in tech. The program included building weather stations, creating IoT-controlled cars, and learning about IoT careers, inspiring the future tech leaders of tomorrow.",
       longDescription:
-        "This workshop was designed to introduce children to the exciting world of IoT and inspire the next generation of makers and technologists. The curriculum was structured to make technology accessible and fun while teaching fundamental concepts of electronics, programming, and problem-solving.\n\nDay 1 focused on basic electronics, introducing components like LEDs, resistors, and sensors. Day 2 covered Arduino programming fundamentals and simple circuits. Day 3 was dedicated to completing projects and preparing for the showcase exhibition where parents and community members could see the children's creations.\n\nThe workshop received overwhelmingly positive feedback from both participants and parents, with many children expressing interest in continuing to learn about technology and programming.",
+        "The ‘Weather Kids’ program, a collaborative initiative with Gavesha and UNICEF, provided a transformative learning experience for youth interested in weather science and IoT technology. Through four engaging workshops, young participants developed their skills in building weather stations, presenting weather forecasts like professional meteorologists, and creating remote-controlled IoT cars using ESP-32 and the Gavesha app. The program culminated in career guidance in IoT, inspiring the next generation of tech leaders. This initiative not only equipped participants with practical skills but also sparked their curiosity and passion for technology, setting them on a path toward limitless possibilities in the world of innovation",
       category: "kids",
-      tags: ["IoT", "Arduino", "STEM Education", "Kids Workshop"],
+      tags: ["IoT", "Micro-Controller", "STEM Education", "Kids Workshop","ESP-32"],
       mainImage: "./workshop-9.jpg?height=500&width=800",
       gallery: [
-        "./workshop-1.jpg?height=400&width=600",
+        "./workshop1.jpg?height=400&width=600",
         "./workshop-2.jpg?height=400&width=600",
         "./workshop-3.jpg?height=400&width=600",
         "./workshop-5.jpg?height=400&width=600",
