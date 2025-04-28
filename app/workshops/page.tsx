@@ -197,6 +197,8 @@ export default function WorkshopsPage() {
                             src={image}
                             alt={`${workshop.title} - Image ${i + 1}`}
                             fill
+                            width={300}
+                            height={300}
                             className="object-cover"
                           />
                         </div>
