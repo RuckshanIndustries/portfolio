@@ -27,17 +27,17 @@ export default function WorkshopsPage() {
         "This workshop was designed to introduce children to the exciting world of IoT and inspire the next generation of makers and technologists. The curriculum was structured to make technology accessible and fun while teaching fundamental concepts of electronics, programming, and problem-solving.\n\nDay 1 focused on basic electronics, introducing components like LEDs, resistors, and sensors. Day 2 covered Arduino programming fundamentals and simple circuits. Day 3 was dedicated to completing projects and preparing for the showcase exhibition where parents and community members could see the children's creations.\n\nThe workshop received overwhelmingly positive feedback from both participants and parents, with many children expressing interest in continuing to learn about technology and programming.",
       category: "kids",
       tags: ["IoT", "Arduino", "STEM Education", "Kids Workshop"],
-      mainImage: "/workshop/workshop-9.jpg",
+      mainImage: "./workshop/workshop-9.jpg",
       gallery: [
-        "/workshop/workshop-1.jpg",
-        "/workshop/workshop-2.jpg",
-        "/workshop/workshop-3.jpg",
-        "/workshop/workshop-5.jpg",
-        "/workshop/workshop-6.jpg",
-        "/workshop/workshop-7.jpg",
-        "/workshop/workshop-9.jpg",
-        "/workshop/workshop-11.jpg",
-        "/workshop/workshop-12.jpg"
+        "./workshop/workshop-1.jpg",
+        "./workshop/workshop-2.jpg",
+        "./workshop/workshop-3.jpg",
+        "./workshop/workshop-5.jpg",
+        "./workshop/workshop-6.jpg",
+        "./workshop/workshop-7.jpg",
+        "./workshop/workshop-9.jpg",
+        "./workshop/workshop-11.jpg",
+        "./workshop/workshop-12.jpg"
       ],
       materials: [
         { name: "Workshop Slides", url: "#" },
