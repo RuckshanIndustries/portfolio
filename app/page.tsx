@@ -326,12 +326,14 @@ export default function Home() {
 
           <div className="max-w-5xl mx-auto space-y-12">
             <WorkshopCard
-              title="IoT for Kids: Building Smart Devices"
-              date="June 15-17, 2023"
-              location="City Science Center"
-              participants="25 children ages 10-14"
-              description="A three-day workshop where children learned the basics of Internet of Things (IoT) technology through hands-on projects. Participants built simple smart devices using Arduino boards, sensors, and basic programming concepts. The workshop culminated in a showcase where kids demonstrated their creations to parents and peers, including smart plant monitors, mini weather stations, and interactive LED displays. The curriculum focused on making technology accessible and fun while teaching fundamental concepts of electronics, programming, and problem-solving."
-              imageUrl="/workshop/workshop-1.jpg?height=500&width=800"
+                   title = "Weather Kids: Building Smart Society"
+                   date= "June 03, 2023"
+                   location= "Nuwara Eliya"
+                   participants= "25+ children ages 10-18"
+                   description= "The ‘Weather Kids’ program, in collaboration with Gavesha and UNICEF, talented young minds through hands-on workshops focused on weather science, IoT engineering, and career exploration in tech. The program included building weather stations, creating IoT-controlled cars, and learning about IoT careers, inspiring the future tech leaders of tomorrow."
+                   
+
+              imageUrl="./workshop1.jpg?height=500&width=800"
             />
 
             <Button
