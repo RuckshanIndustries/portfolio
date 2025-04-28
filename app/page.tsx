@@ -230,7 +230,7 @@ export default function Home() {
               category="Game Development"
               description="An open-world RPG developed with Unreal Engine, featuring advanced AI systems and dynamic environments."
               technologies={["Unreal Engine", "C++", "Blueprint", "Maximo"]}
-              imageUrl="/games/Bio5.png?height=400&width=600"
+              imageUrl="./Bio5.png"
               modelType="fantasy"
               githubUrl="https://github.com/yourusername/adventure-quest"
               liveUrl="https://ruckshanindustries.itch.io/bioware"
@@ -240,7 +240,7 @@ export default function Home() {
               category="Game Development"
               description="A space simulation game built with Unity, incorporating realistic physics and procedural generation."
               technologies={["Unreal Engine", "C++", "Shader Programming", "Procedural Generation"]}
-              imageUrl="/placeholder.svg?height=400&width=600"
+              imageUrl="./placeholder.svg"
               modelType="space"
               githubUrl="https://github.com/yourusername/space-explorer"
               liveUrl="https://example.com/space-explorer-demo"
@@ -250,7 +250,7 @@ export default function Home() {
               category="Game Development"
               description="An Endless Runner Game."
               technologies={["Unreal Engine", "C++", "Blueprints"]}
-              imageUrl="/games/Bingo4.png?height=400&width=600"
+              imageUrl="./Bingo4.png"
               modelType="space"
               githubUrl="https://github.com/yourusername/space-explorer"
               liveUrl="https://example.com/space-explorer-demo"
@@ -260,7 +260,7 @@ export default function Home() {
               category="Game Development"
               description="A Multiplayer Game like Bomber man."
               technologies={["Unreal Engine", "C++", "Blueprints", "Steam Plugin Integration"]}
-              imageUrl="/placeholder.svg?height=400&width=600"
+              imageUrl="./placeholder.svg"
               modelType="space"
               githubUrl="https://github.com/yourusername/space-explorer"
               liveUrl="https://example.com/space-explorer-demo"
@@ -271,7 +271,7 @@ export default function Home() {
               description="Its A suits Designing platform that will export the image will multiple combination.
               Made this for a customer in freelancing he higly stsified."
               technologies={["C#", "Firebase", "MAUI", "REST API"]}
-              imageUrl="/placeholder.svg?height=400&width=600"
+              imageUrl="./placeholder.svg"
               modelType="data"
               githubUrl="https://github.com/yourusername/enterprise-resource-manager"
             />
@@ -280,7 +280,7 @@ export default function Home() {
               category="Mobile Development"
               description="A comprehensive ERP solution developed using the IFS framework, streamlining business operations."
               technologies={["Flutter", "Firebase", "Supabase", "REST API"]}
-              imageUrl="/mobile/petcare.png?height=400&width=600"
+              imageUrl="./petcare.png"
               modelType="data"
               githubUrl="https://github.com/yourusername/enterprise-resource-manager"
             />
@@ -289,7 +289,7 @@ export default function Home() {
               category="Software Engineering"
               description="A robust inventory management system with real-time tracking and analytics capabilities."
               technologies={["Java", "Spring Boot", "MySQL"]}
-              imageUrl="/placeholder.svg?height=400&width=600"
+              imageUrl="./placeholder.svg"
               modelType="tech"
               githubUrl="https://github.com/yourusername/inventory-control-system"
               liveUrl="https://example.com/inventory-system-demo"

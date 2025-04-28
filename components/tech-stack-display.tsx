@@ -44,7 +44,7 @@ export default function TechStackDisplay() {
   const techStack: TechItem[] = [
     {
       name: "Unreal Engine",
-      icon: "/icons/unreal-engine.svg",
+      icon: "./unreal-engine.svg",
       color: "#1A93F1",
       category: "game",
       description: "Game Development & 3D Visualization",
