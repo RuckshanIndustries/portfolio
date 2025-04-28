@@ -340,7 +340,7 @@ export default function Home() {
               asChild
               className="mx-auto bg-gradient-to-r from-sky-500 to-indigo-500 hover:from-sky-600 hover:to-indigo-600 text-white border-none"
             >
-              <a href="./portfolio/workshops">View All Workshops</a>
+              <a href="./workshops">View All Workshops</a>
             </Button>
           </div>
         </div>
