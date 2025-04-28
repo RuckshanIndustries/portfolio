@@ -36,7 +36,7 @@ export default function ProfileImage() {
       <motion.div className="relative w-64 h-64 md:w-72 md:h-72 rounded-full overflow-hidden" animate={controls}>
         <div className="absolute inset-0 rounded-full bg-gradient-to-r from-sky-500/20 to-indigo-500/20 animate-pulse" />
         <Image
-          src="/profilepic.jpg?height=300&width=300"
+          src="./profilepic.jpg?height=300&width=300"
           alt="Profile"
           width={300}
           height={300}

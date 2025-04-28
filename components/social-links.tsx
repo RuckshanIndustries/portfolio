@@ -4,7 +4,7 @@ export default function SocialLinks() {
   return (
     <div className="flex gap-4 pt-2">
       <a
-        href="https://github.com/yourusername"
+        href="https://github.com/RuckshanIndustries"
         target="_blank"
         rel="noopener noreferrer"
         className="p-2 rounded-full bg-zinc-100 hover:bg-zinc-200 text-zinc-800 transition-colors"
@@ -13,7 +13,7 @@ export default function SocialLinks() {
         <Github size={20} />
       </a>
       <a
-        href="https://linkedin.com/in/yourusername"
+        href="https://linkedin.com/in/arvinthdillruckshan"
         target="_blank"
         rel="noopener noreferrer"
         className="p-2 rounded-full bg-zinc-100 hover:bg-zinc-200 text-zinc-800 transition-colors"
@@ -22,7 +22,7 @@ export default function SocialLinks() {
         <Linkedin size={20} />
       </a>
       <a
-        href="mailto:contact@example.com"
+        href="mailto:arvinthdillruckshan3@gmail.com"
         className="p-2 rounded-full bg-zinc-100 hover:bg-zinc-200 text-zinc-800 transition-colors"
         aria-label="Email"
       >

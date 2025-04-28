@@ -16,6 +16,7 @@ import ProfileImage from "@/components/profile-image"
 import Navbar from "@/components/navbar"
 import SocialLinks from "@/components/social-links"
 import TechStackDisplay from "@/components/tech-stack-display"
+import ContactForm from "./contect"
 
 // Dynamically import 3D components to avoid SSR issues
 const HeroScene = dynamic(() => import("@/components/3d/hero-scene"), {
@@ -375,51 +376,16 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             <GlassmorphicPanel className="p-6">
               <h3 className="text-xl font-bold mb-4 text-zinc-800">Send a Message</h3>
-              <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
-                <div className="space-y-2">
-                  <label htmlFor="name" className="text-sm font-medium text-zinc-700">
-                    Name
-                  </label>
-                  <input
-                    id="name"
-                    type="text"
-                    className="w-full px-3 py-2 border border-zinc-300 rounded-md focus:outline-none focus:ring-2 focus:ring-sky-500"
-                    placeholder="Your name"
-                  />
-                </div>
-                <div className="space-y-2">
-                  <label htmlFor="email" className="text-sm font-medium text-zinc-700">
-                    Email
-                  </label>
-                  <input
-                    id="email"
-                    type="email"
-                    className="w-full px-3 py-2 border border-zinc-300 rounded-md focus:outline-none focus:ring-2 focus:ring-sky-500"
-                    placeholder="Your email"
-                  />
-                </div>
-                <div className="space-y-2">
-                  <label htmlFor="message" className="text-sm font-medium text-zinc-700">
-                    Message
-                  </label>
-                  <textarea
-                    id="message"
-                    rows={4}
-                    className="w-full px-3 py-2 border border-zinc-300 rounded-md focus:outline-none focus:ring-2 focus:ring-sky-500"
-                    placeholder="Your message"
-                  />
-                </div>
-                <Button className="w-full bg-gradient-to-r from-sky-500 to-indigo-500 hover:from-sky-600 hover:to-indigo-600 text-white border-none">
-                  Send Message
-                </Button>
-              </form>
+              <ContactForm>
+
+              </ContactForm>
             </GlassmorphicPanel>
 
             <GlassmorphicPanel className="p-6">
               <h3 className="text-xl font-bold mb-4 text-zinc-800">Connect With Me</h3>
               <div className="space-y-4">
                 <a
-                  href="mailto:contact@example.com"
+                  href="mailto:arvinthdillruckshan3@gmail.com"
                   className="flex items-center space-x-3 p-4 rounded-lg border border-zinc-200 hover:border-sky-500/50 hover:bg-zinc-50 transition-all duration-300 group"
                 >
                   <svg
@@ -437,10 +403,10 @@ export default function Home() {
                     <rect x="2" y="4" width="20" height="16" rx="2" />
                     <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
                   </svg>
-                  <span className="group-hover:text-sky-600 transition-colors">contact@example.com</span>
+                  <span className="group-hover:text-sky-600 transition-colors">Email</span>
                 </a>
                 <a
-                  href="https://github.com/yourusername"
+                  href="https://github.com/RuckshanIndustries"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center space-x-3 p-4 rounded-lg border border-zinc-200 hover:border-indigo-500/50 hover:bg-zinc-50 transition-all duration-300 group"
@@ -460,10 +426,10 @@ export default function Home() {
                     <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
                     <path d="M9 18c-4.51 2-5-2-7-2" />
                   </svg>
-                  <span className="group-hover:text-indigo-600 transition-colors">github.com/yourusername</span>
+                  <span className="group-hover:text-indigo-600 transition-colors">Github</span>
                 </a>
                 <a
-                  href="https://linkedin.com/in/yourusername"
+                  href="https://linkedin.com/in/arvinthdillruckshan"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center space-x-3 p-4 rounded-lg border border-zinc-200 hover:border-sky-500/50 hover:bg-zinc-50 transition-all duration-300 group"
@@ -484,7 +450,7 @@ export default function Home() {
                     <rect x="2" y="9" width="4" height="12" />
                     <circle cx="4" cy="4" r="2" />
                   </svg>
-                  <span className="group-hover:text-sky-600 transition-colors">linkedin.com/in/yourusername</span>
+                  <span className="group-hover:text-sky-600 transition-colors">Linkedin</span>
                 </a>
               </div>
             </GlassmorphicPanel>
