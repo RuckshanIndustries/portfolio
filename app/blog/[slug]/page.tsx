@@ -43,7 +43,7 @@ export async function generateStaticParams() {
     const app = initializeApp(firebaseConfig)
     const db = getFirestore(app)
     const querySnapshot = await getDocs(collection(db, "blogPosts"))
-    
+
     return querySnapshot.docs.map((doc) => ({
       slug: doc.id,
     }))
@@ -70,9 +70,15 @@ export default async function BlogPostPage({ params }: { params: { slug: string 
       return { notFound: true }
     }
 
+
     const postData = postSnap.data() as BlogPost
-    return <BlogPostContent 
-      post={{ id: postSnap.id, ...postData }} 
+    return <BlogPostContent
+      post={{
+        id: postSnap.id,
+        ...postData,
+        // Convert Firestore Timestamp to milliseconds
+        createdAt: postData.createdAt.toMillis()
+      }}
       initialLikes={postData.likes || 0}
     />
   } catch (error) {

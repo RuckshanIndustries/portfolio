@@ -26,7 +26,7 @@ interface BlogPostContentProps {
             website?: string
         }
         tags: string[]
-        createdAt: Timestamp
+        createdAt: number
         isAnonymous: boolean
         likes?: number
     }
@@ -159,8 +159,9 @@ export default function BlogPostContent({ post, initialLikes }: BlogPostContentP
                                             </p>
                                             <div className="flex items-center text-xs text-zinc-500">
                                                 <Calendar className="w-3 h-3 mr-1" />
-                                                {post.createdAt ? new Date(post.createdAt.toMillis()).toLocaleDateString() : "Recent"}
+                                                {new Date(post.createdAt).toLocaleDateString()}
                                             </div>
+
                                         </div>
                                     </div>
 
