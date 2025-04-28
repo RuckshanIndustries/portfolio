@@ -31,25 +31,36 @@ interface BlogPost {
   likes?: number
 }
 
+// In your page.tsx
 export async function generateStaticParams() {
-  // Check if all required Firebase config values are present
-  const allConfigPresent = Object.values(firebaseConfig).every((value) => !!value)
-  if (!allConfigPresent) {
-    console.error("Missing Firebase configuration values")
-    return []
+  const requiredConfig = [
+    process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
+    process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
+    process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
+    process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
+    process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
+    process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
+  ];
+
+  if (requiredConfig.some(value => !value)) {
+    throw new Error(`
+      Missing Firebase configuration values!
+      Check that all required environment variables are set:
+      ${JSON.stringify(requiredConfig, null, 2)}
+    `);
   }
 
   try {
-    const app = initializeApp(firebaseConfig)
-    const db = getFirestore(app)
-    const querySnapshot = await getDocs(collection(db, "blogPosts"))
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
+    const querySnapshot = await getDocs(collection(db, "blogPosts"));
 
     return querySnapshot.docs.map((doc) => ({
       slug: doc.id,
-    }))
+    }));
   } catch (error) {
-    console.error("Error generating static params:", error)
-    return []
+    console.error("Error generating static params:", error);
+    throw new Error("Failed to generate static params due to Firebase error");
   }
 }
 
