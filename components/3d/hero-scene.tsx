@@ -5,6 +5,7 @@ import { Canvas, useFrame } from "@react-three/fiber"
 import { PerspectiveCamera, Environment } from "@react-three/drei"
 import { Vector3, MathUtils } from "three"
 import { useInView } from "framer-motion"
+import { Suspense } from "react"
 
 function FloatingObject({ position, size = 1, color = "#00eeff", speed = 1, geometry = "box" }) {
   const meshRef = useRef()
@@ -64,20 +65,36 @@ function Scene() {
 
 export default function HeroScene() {
   const ref = useRef(null)
-  const isInView = useInView(ref)
-  const [mounted, setMounted] = useState(false)
+  const isInView = useInView(ref, { once: false })
+  const [isMounted, setIsMounted] = useState(false)
 
   useEffect(() => {
-    setMounted(true)
+    setIsMounted(true)
   }, [])
 
-  if (!mounted) return null
+  if (!isMounted) {
+    return null
+  }
 
   return (
-    <div ref={ref} className="w-full h-full">
+    <div ref={ref} style={{ width: "100%", height: "100%" }}>
       {isInView && (
-        <Canvas>
-          <Scene />
+        <Canvas
+          gl={{ antialias: true }}
+          onCreated={(state) => {
+            state.gl.setClearColor(0x000000, 0)
+          }}
+        >
+          <Suspense fallback={null}>
+            {/* Temporarily use simple box for debugging */}
+            <ambientLight intensity={0.5} />
+            <mesh>
+              <boxGeometry args={[1, 1, 1]} />
+              <meshStandardMaterial color="#00eeff" />
+            </mesh>
+            {/* Uncomment to restore full scene after confirming fix */}
+            {/* <Scene /> */}
+          </Suspense>
         </Canvas>
       )}
     </div>
