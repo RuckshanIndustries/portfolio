@@ -121,7 +121,7 @@ export default function Navbar({ onScrollToSection, isHomePage = false }: Navbar
 
         {/* Resume Button */}
         <a
-          href="./resume/resume.pdf"
+          href="./resume.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="hidden md:flex items-center gap-2 bg-gradient-to-r from-sky-500 to-indigo-500 hover:from-sky-600 hover:to-indigo-600 text-white border-none px-4 py-2 rounded-md font-medium text-sm transition-all duration-300"
