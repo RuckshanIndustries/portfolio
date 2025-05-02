@@ -33,21 +33,9 @@ interface BlogPost {
 
 // In your page.tsx
 export async function generateStaticParams() {
-  const requiredConfig = [
-    process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
-    process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
-    process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
-    process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
-    process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
-    process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
-  ];
-
+  const requiredConfig = Object.values(firebaseConfig);
   if (requiredConfig.some(value => !value)) {
-    throw new Error(`
-      Missing Firebase configuration values!
-      Check that all required environment variables are set:
-      ${JSON.stringify(requiredConfig, null, 2)}
-    `);
+    throw new Error("Missing Firebase configuration values");
   }
 
   try {
@@ -55,9 +43,13 @@ export async function generateStaticParams() {
     const db = getFirestore(app);
     const querySnapshot = await getDocs(collection(db, "blogPosts"));
 
-    return querySnapshot.docs.map((doc) => ({
-      slug: doc.id,
-    }));
+    return querySnapshot.docs
+      .map((doc) => doc.id)
+      .filter((slug) =>
+        // only allow clean slugs: no file extensions or slashes
+        !slug.match(/\.(png|jpg|jpeg|gif|svg|webp)$/i) && !slug.includes("/")
+      )
+      .map((slug) => ({ slug }));
   } catch (error) {
     console.error("Error generating static params:", error);
     throw new Error("Failed to generate static params due to Firebase error");
