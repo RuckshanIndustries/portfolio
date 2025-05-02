@@ -4,8 +4,13 @@ import { ThemeProvider } from "@/components/theme-provider"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Portfolio | Game Developer & Software Engineer",
+  title: "Arvinth Ruckshan | Game Developer & Software Engineer",
   description: "Professional portfolio showcasing game development and software engineering projects",
+  icons: {
+    icon: "./ar.png", // or "/favicon.png"
+    shortcut: "./ar.png",
+
+  },
 }
 
 export default function RootLayout({
