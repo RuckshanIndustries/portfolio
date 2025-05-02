@@ -121,7 +121,7 @@ export default function Navbar({ onScrollToSection, isHomePage = false }: Navbar
 
         {/* Resume Button */}
         <a
-          href="./resume.pdf"
+          href="https://arvinthruckshan.games/resume.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="hidden md:flex items-center gap-2 bg-gradient-to-r from-sky-500 to-indigo-500 hover:from-sky-600 hover:to-indigo-600 text-white border-none px-4 py-2 rounded-md font-medium text-sm transition-all duration-300"
@@ -164,13 +164,15 @@ export default function Navbar({ onScrollToSection, isHomePage = false }: Navbar
               </Link>
             )}
 
-            <Link
-              href="/workshops"
-              className={`hover:text-sky-500 transition-colors ${isActive("/workshops") ? "text-sky-500" : ""}`}
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              Workshops
-            </Link>
+<Link
+            href="/workshops"
+            className={`text-sm hover:text-sky-500 transition-colors relative group ${isActive("/workshops") ? "text-sky-500" : ""
+              }`}
+          >
+            Workshops
+            {isActive("/workshops") && <span className="absolute bottom-0 left-0 w-full h-0.5 bg-sky-500"></span>}
+            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-sky-500 group-hover:w-full transition-all duration-300"></span>
+          </Link>
 
             <Link
               href="/blog"
