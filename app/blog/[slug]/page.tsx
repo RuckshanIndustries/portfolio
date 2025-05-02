@@ -1,6 +1,7 @@
 // app/blog/[slug]/page.tsx
 import { collection, getDocs, doc, getDoc, getFirestore } from "firebase/firestore"
 import { initializeApp } from "firebase/app"
+import "@/app/globals.css"
 import { type Timestamp } from "firebase/firestore"
 import BlogPostContent from "./BlogPostContent"
 
