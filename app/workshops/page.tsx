@@ -29,15 +29,15 @@ export default function WorkshopsPage() {
       tags: ["IoT", "Micro-Controller", "STEM Education", "Kids Workshop","ESP-32"],
       mainImage: "/workshop9.jpg",
       gallery: [
-        "/portfolio/workshop1.jpg",
-        "/portfolio/workshop2.jpg",
-        "/portfolio/workshop3.jpg",
-        "/portfolio/workshop5.jpg",
-        "/portfolio/workshop6.jpg",
-        "/portfolio/workshop7.jpg",
-        "/portfolio/workshop9.jpg",
-        "/portfolio/workshop11.jpg",
-        "/portfolio/workshop12.jpg",
+        "/workshop1.jpg",
+        "/workshop2.jpg",
+        "/workshop3.jpg",
+        "/workshop5.jpg",
+        "/workshop6.jpg",
+        "/workshop7.jpg",
+        "/workshop9.jpg",
+        "/workshop11.jpg",
+        "/workshop12.jpg",
       ],
       materials: [
         { name: "Workshop Slides", url: "#" },
@@ -103,7 +103,6 @@ export default function WorkshopsPage() {
                             alt={workshop.title}
                             fill
                             className="object-cover"
-                            priority
                           />
                         </div>
                         <div className="p-6">
