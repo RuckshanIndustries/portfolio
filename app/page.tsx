@@ -326,12 +326,12 @@ export default function Home() {
 
           <div className="max-w-5xl mx-auto space-y-12">
             <WorkshopCard
-                   title = "Weather Kids: Building Smart Society"
-                   date= "June 03, 2023"
-                   location= "Nuwara Eliya"
-                   participants= "25+ children ages 10-18"
-                   description= "The ‘Weather Kids’ program, in collaboration with Gavesha and UNICEF, talented young minds through hands-on workshops focused on weather science, IoT engineering, and career exploration in tech. The program included building weather stations, creating IoT-controlled cars, and learning about IoT careers, inspiring the future tech leaders of tomorrow."
-                   
+              title="Weather Kids: Building Smart Society"
+              date="June 03, 2023"
+              location="Nuwara Eliya"
+              participants="25+ children ages 10-18"
+              description="The ‘Weather Kids’ program, in collaboration with Gavesha and UNICEF, talented young minds through hands-on workshops focused on weather science, IoT engineering, and career exploration in tech. The program included building weather stations, creating IoT-controlled cars, and learning about IoT careers, inspiring the future tech leaders of tomorrow."
+
 
               imageUrl="./workshop1.jpg?height=500&width=800"
             />
