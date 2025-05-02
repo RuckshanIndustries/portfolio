@@ -1,7 +1,8 @@
 "use client"
 
 import { Suspense, useRef } from "react"
-import { ArrowRight } from "lucide-react"
+import { ArrowRight, Link } from "lucide-react"
+import NextLink from "next/link"; 
 import { Button } from "@/components/ui/button"
 import dynamic from "next/dynamic"
 import AnimatedText from "@/components/animated-text"
@@ -340,10 +341,9 @@ export default function Home() {
               asChild
               className="mx-auto bg-gradient-to-r from-sky-500 to-indigo-500 hover:from-sky-600 hover:to-indigo-600 text-white border-none"
             >
-              <a href="./workshops">View All Workshops</a>
+              <NextLink href="/workshops">View All Workshops</NextLink>
             </Button>
 
-            
           </div>
         </div>
       </section>

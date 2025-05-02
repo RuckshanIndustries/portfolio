@@ -203,21 +203,7 @@ export default function WorkshopsPage() {
                     </div>
                   </div>
 
-                  {workshop.materials.length > 0 && (
-                    <div>
-                      <h3 className="text-xl font-medium mb-4 text-zinc-800">Workshop Materials</h3>
-                      <div className="flex flex-wrap gap-4">
-                        {workshop.materials.map((material, i) => (
-                          <Button key={i} variant="outline" asChild className="gap-2">
-                            <a href={material.url} target="_blank" rel="noopener noreferrer">
-                              <ExternalLink size={16} />
-                              {material.name}
-                            </a>
-                          </Button>
-                        ))}
-                      </div>
-                    </div>
-                  )}
+
                 </GlassmorphicPanel>
               </div>
             </div>
