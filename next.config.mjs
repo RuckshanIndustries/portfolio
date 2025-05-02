@@ -16,8 +16,8 @@ const isProd = process.env.NODE_ENV === "production";
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: "export",
-  basePath: isProd ? "" : "", // If deploying to subfolder, set it here
-  assetPrefix: isProd ? "./portfolio" : "", // Ensures correct asset URLs
+  basePath: isProd ? "/portfolio" : "", // Set this if deploying to a subfolder
+  assetPrefix: isProd ? "/portfolio/" : "", // Ensure correct asset URLs in production
   eslint: {
     ignoreDuringBuilds: true,
   },
