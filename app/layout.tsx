@@ -7,8 +7,8 @@ export const metadata: Metadata = {
   title: "Arvinth Ruckshan | Game Developer & Software Engineer",
   description: "Professional portfolio showcasing game development and software engineering projects",
   icons: {
-    icon: "./ar.png", // or "/favicon.png"
-    shortcut: "./ar.png",
+    icon: "", // or "/favicon.png"
+    shortcut: "",
 
   },
 }
